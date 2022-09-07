@@ -20,4 +20,11 @@ toast.success = function(title, duration = 3000) {
     duration
   })
 }
+
+toast.loading = (title, duration) => {
+  uni.showToast({
+    title: '加载中',
+    icon: 'loading'
+  })
+}
 export default toast
